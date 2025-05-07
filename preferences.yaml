@@ -1,0 +1,24 @@
+- name: playlevel variables
+  host: web
+  vars:
+    COURSE: PLAY
+    DURATION: 120
+    TRAINER: SIVA
+  vars_files:
+  - vars.yaml
+  vars_prompt:
+    - name: COURSE
+      prompt: "Enter course name"
+    - name: DURATION
+      prompt: "Enter duration"
+    - name: TRAINER
+      prompt: "Enter trainer name"
+
+  tasks:
+    - name: print playlevel
+      vars:
+        COURSE: "Task"
+        DURATION: 120
+        TRAINER: Siva
+      ansible.builtin.debug:
+        msg: "Course is {{COURSE}}, Duration is {{DURATION}}, Trainer is {{TRAINER}}"
