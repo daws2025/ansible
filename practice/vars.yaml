@@ -1,0 +1,17 @@
+- name: pass variables
+  hosts: web
+  vars:
+   trainer: Siva
+  vars_file:
+  - course.yaml
+  vars_prompt:
+    name: trainer
+    prompt: "Enter trainer name:"
+  tasks:
+  - name: print variables
+    vars: 
+      trainer: Ashok
+    ansible.builtin.debug:
+      msg: "Trainer is {{trainer}}"
+    
+    
