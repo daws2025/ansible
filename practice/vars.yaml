@@ -4,9 +4,9 @@
    trainer: Siva
   # vars_files:
   # - course.yaml
-  vars_prompt:
-    name: trainer
-    prompt: "Enter trainer name:"
+  # vars_prompt:
+  #   name: trainer
+  #   prompt: "Enter trainer name:"
   tasks:
   - name: print variables
     # vars: 
