@@ -1,5 +1,7 @@
 - name: number is greater than 10 or not
   hosts: web
+  vars:
+    number: 15
   tasks:
   - name: number is greater than 10
     ansible.builtin.debug:
