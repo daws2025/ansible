@@ -1,7 +1,7 @@
 - name: pass variables
   hosts: web
-  vars:
-   trainer: Siva
+  # vars:
+  #  trainer: Siva
   # vars_files:
   # - course.yaml
   # vars_prompt:
