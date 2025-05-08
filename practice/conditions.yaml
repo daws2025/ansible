@@ -1,7 +1,8 @@
 - name: number is greater than 10 or not
   hosts: web
-  vars:
-    number: 15
+  vars_prompt:
+    name: number
+    prompt: "enter number"
   tasks:
   - name: number is greater than 10
     ansible.builtin.debug:
