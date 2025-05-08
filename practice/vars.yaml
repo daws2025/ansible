@@ -9,8 +9,8 @@
     prompt: "Enter trainer name:"
   tasks:
   - name: print variables
-    vars: 
-      trainer: Ashok
+    # vars: 
+    #   trainer: Ashok
     ansible.builtin.debug:
       msg: "Trainer is {{trainer}}"
     
