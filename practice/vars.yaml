@@ -2,8 +2,8 @@
   hosts: web
   vars:
    trainer: Siva
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
     name: trainer
     prompt: "Enter trainer name:"
