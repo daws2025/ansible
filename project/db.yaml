@@ -9,8 +9,8 @@
       name: {{ item }}
       executable: pip3.9
     loop:
-    -cryptography
-    -PyMysql
+    - cryptography
+    - PyMysql
   - name: install mysql 
     ansible.builtin.package:
        name: mysql-server
