@@ -43,6 +43,7 @@
       name: "{{item}}"
       executable: pip3.9
     loop:
+    - python3-pip
     - cryptography
     - PyMysql
   - name: import mysql data
