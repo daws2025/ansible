@@ -1,5 +1,5 @@
 - name: configure mysql server
-  hosts: mysql
+  hosts: db
   become: yes
   vars:
     mysql_root_password: ExpenseApp@1
@@ -27,7 +27,7 @@
     community.mysql.mysql_info:
       login_user: root
       login_password: "{{ mysql_root_password }}"
-      login_host: mysql.daws82s.online
+      login_host: mysql.sushu.store
     register: mysql_info
     ignore_errors: true
 
