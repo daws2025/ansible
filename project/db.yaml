@@ -24,10 +24,10 @@
   - name: login check
     community.mysql.mysql_info:
       login_user: root
-      login_password: "{{my_sql_passwd}}"
+      login_password: "{{ my_sql_passwd }}"
       login_host: mysql.sushu.store
     register: mysql_info
     ignore_errors: true
   - name: set password
-    ansible.builtin.command: "mysql_secure_installation --set-root-pass {{my_sql_passwd}}"
+    ansible.builtin.command: "mysql_secure_installation --set-root-pass {{ my_sql_passwd }}"
     when: mysql_info.failed is true
